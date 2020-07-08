@@ -9,6 +9,7 @@
     "electron-log": "^4.2.0",
     "electron-updater": "^4.3.1",
     "i18next": "^19.5.4",
+    "jquery": "^3.5.1",
     "node-zip": "^1.1.1"
   },
   "scripts": {
