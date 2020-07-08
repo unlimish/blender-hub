@@ -9,6 +9,14 @@
         <script src="../js/uikit-icons.min.js"></script>
         <link rel="stylesheet" href="../css/uikit.min.css">
 
+        <script src="node_modules/i18next/i18next.js""></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script>
+            i18n.init(function(t) {
+                $("#list").i18n();
+            });
+        </script>
+
         <style>
             p {
                 display:-webkit-box;
@@ -35,11 +43,11 @@
             </div>
             <div id="installed_list" class="toggle" hidden></div>
             <button id="select-folder" class="uk-button uk-button-primary uk-button-small uk-margin-top"
-                type="button">バージョンを追加</button>
+                type="button" id="add-version"></button>
         </div>
         <div id="loading" uk-modal>
             <div class="uk-modal-dialog uk-modal-body">
-                <div uk-spinner></div> 処理中
+                <div uk-spinner></div> 
             </div>
         </div>
         <div id="setting" uk-modal="bg-close: false; esc-close: false;">
